@@ -1,0 +1,271 @@
+/* Padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  height: 500vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  background-color: #64ddf0;
+  position: fixed;
+}
+
+.top-header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-header {
+  background-color: #fff;
+  padding: 10px 4%;
+}
+
+/* Estilização da Image Logo */
+.top-header .logotipo img {
+  max-width: 200px;
+  border-radius: 4px;
+}
+
+/* Estilização da Barra de Pesquisa */
+.pesquisa {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  transition: 0.5s;
+}
+
+/* Classe Ativar */
+.pesquisa.ativar {
+  width: 400px;
+}
+
+/* Icon da Lupa */
+.pesquisa .lupa-buscar {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.pesquisa .lupa-buscar i {
+  font-size: 40px;
+}
+/* **************** */
+
+/* Texto de Pesquisa */
+.pesquisa .input-buscar {
+  position: absolute;
+  left: 80px;
+  width: calc(100% - 120px);
+  height: 100%;
+  line-height: 80px;
+}
+
+.pesquisa .input-buscar input {
+  border: 0;
+  outline: 0;
+  font-size: 23px;
+}
+/* ***************** */
+
+/* Icon de Fechar */
+.pesquisa .btn-fechar {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.pesquisa .btn-fechar i {
+  font-size: 25px;
+  padding: 0 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+/* ***************** */
+
+/* Estilizando o Menu de Conta */
+section nav a {
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+section.header-menu {
+  background: rgb(35, 155, 224);
+  padding-inline: 16px;
+}
+
+section nav.nav-menu {
+  max-width: 1280px;
+  height: 70px;
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilizar Lista de Links */
+.nav-menu .nav-list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-list a {
+  font-size: 18px;
+  color: #fff;
+  padding-block: 16px;
+}
+
+.hamburger {
+  border: none;
+  background: none;
+}
+/* ************************* */
+
+/* Estilização do Botão Social */
+.top-header .btn-social {
+  width: 17%;
+  height: 17%;
+  justify-content: space-between;
+}
+.top-header .btn-social button {
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 30%;
+
+  background-color: transparent;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+/* Estilização dos Links */
+.bottom-header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.bottom-header nav ul li a {
+  color: #000;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 200;
+  display: block;
+  transition: 0.2s;
+}
+
+/* Quando posicionar o mouse em cima dos links ira acontecer os seguintes efeitos */
+.bottom-header nav ul li a:hover {
+  background-color: rgb(0, 132, 255);
+  color: #000;
+  box-shadow: inset 0 0 8px #00000064;
+  border-radius: 3px;
+}
+
+.drop-hover {
+  position: relative;
+}
+
+.drop-hover .drop,
+.drop-hover .drop-tes,
+.drop-hover .drop-at {
+  position: absolute;
+  background-color: #6de4e4;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.drop-hover .drop a,
+.drop-hover .drop-tes a,
+.drop-hover .drop-at a {
+  padding: 20px;
+}
+
+/* Para Autos e Reformas e Reparos */
+.drop-hover:hover .drop {
+  height: 310px;
+}
+
+/* Para Moda e Beleza e Serviços Domésticos */
+.drop-hover:hover .drop-tes {
+  height: 185px;
+}
+
+/* Para Assistência Técnica */
+.drop-hover:hover .drop-at {
+  height: 186px;
+}
+
+/* Estilizando a Caixa do Prestador de Serviços */
+section.servs {
+  padding: 285px 0;
+}
+
+.interface .caixa {
+  border: 2px solid #000;
+  padding-bottom: 10px;
+}
+
+.caixa {
+  width: 26%;
+  height: 530px;
+}
+
+.caixa .image img {
+  width: 329px;
+  height: 250px;
+  border: 1px solid #000;
+}
+
+.txt-principal .form-control {
+  margin: 5px 8px;
+  padding: 10px;
+  width: 300px;
+}
+
+.txt-des .form-control {
+  padding: 20px;
+  margin: 5px 8px;
+  width: 300px;
+  height: 120px;
+}
+
+.btn-button {
+  margin: auto 6px;
+}
+
+.btn-button button {
+  background-color: #64ddf0;
+  padding: 7px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+}

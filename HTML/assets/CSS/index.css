@@ -1,0 +1,131 @@
+html,
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #87ceeb;
+  color: #3be8d6;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body,
+section {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#inicio {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 24px 80px 128px 80px;
+  position: relative;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.paragrafo {
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 32px;
+  text-align: justify;
+}
+
+.posicao {
+  background-color: #008080;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+}
+
+.cont {
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 64px 80px;
+}
+
+footer img,
+footer .titulo {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+/* Estilizando os Botões de Contato */
+section.contato {
+  background-color: #fff;
+  padding: 80px 160px;
+}
+
+.txt-contato,
+.icons-contato {
+  display: inline-block;
+  width: 50%;
+  margin-right: -4px;
+  vertical-align: middle;
+}
+
+.contato .txt-contato h3 {
+  font-size: 2.5em;
+  /* Altura entre linhas */
+  line-height: 50px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.contato .txt-contato h3 span {
+  display: block;
+  font-weight: 700;
+}
+
+.contato .txt-contato p {
+  font-weight: 400;
+}
+
+.contato .icons-contato a {
+  text-decoration: none;
+}
+
+.contato .icons-contato button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 60%;
+  height: 60px;
+  margin: 0 auto 20px auto;
+  padding: 0 60px;
+
+  background-color: transparent;
+  border: 2px solid #000;
+  cursor: pointer;
+
+  transition: 0.5s;
+}
+
+.contato .icons-contato button i {
+  font-size: 20px;
+}
+
+.contato .icons-contato button:hover {
+  background-color: #87ceeb;
+}
+
+.contato .icons-contato button:hover i,
+.contato .icons-contato button:hover p {
+  color: #fff;
+}

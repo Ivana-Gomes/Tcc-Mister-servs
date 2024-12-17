@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-height: 100%;
+}
+
+body {
+  color: rgb(26, 174, 215);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo {
+  flex: 1 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.container h2 {
+  color: black;
+  font-weight: 1000;
+}

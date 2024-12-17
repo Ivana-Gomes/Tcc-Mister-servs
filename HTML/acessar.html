@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/IMG/Mister_Servs-removebg-preview.png" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/CSS/login.css">
+  <script defer src="assets/JavaScript/login.js"></script>
+  <title>Login - Mister Servs</title>
+</head>
+
+<body>
+  <!-- Conteúdo Principal -->
+  <main class="container-fluid">
+    <section
+      class="container form-control bg-opacity-10 border-info border-top border-bottom border-end-0 border-start-0 pt-3">
+      <div class="row">
+        <!-- Título e Subtítulo -->
+        <div class="col-12 text-center mb-3">
+          <h1 class="pb-5">Login</h1>
+        </div>
+      </div>
+
+      <!-- Formulário -->
+      <form data-form="" class="row g-1" action="" method="post" id="formularioLogin">
+        <div class="col-12 form-floating mb-3">
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          <label for="email">Endereço de Email</label>
+        </div>
+        <div class="col-12 form-floating">
+          <input type="password" class="form-control" id="senha" placeholder="********">
+          <label for="password">Senha</label>
+        </div>
+
+        <div class="col-6 mt-4 mb-3 text-center">
+          <a href="#">
+            <button data-button="button" type="submit" class="btn btn-primary" style="--bs-btn-padding-y: .5rem;
+                      --bs-btn-padding-x: 96%; --bs-btn-font-size: .80rem;">Login</button>
+          </a>
+        </div>
+      </form>
+
+      <!-- Links de nova senha e cadastro de usuário -->
+      <div class="row pb-3">
+        <div class="col-12 text-center pt-4">
+          <h5>Esqueceu a sua senha? <a href="#">Clique aqui</a></h5>
+        </div>
+        <div class="col-12 text-center">
+          <h5>Não tem conta?</h5>
+          <h5>Faça aqui seu cadastro: <a href="cadastrar.html" class="fw-bold text-primary">Cadastrar
+              conta</a></h5>
+        </div>
+        <div class="col-12 text-center pt-3">
+          <a class="btn btn-outline-dark" href="index.html">Voltar para a Página Inicial</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="assets/JavaScript/autenticacao.js"></script>
+</body>
+
+</html>
